@@ -1,0 +1,17 @@
+# Training configuration
+epochs: 50
+optimizer:
+  name: "adam"  # adam, sgd
+  lr: 0.001
+  weight_decay: 0.0001
+  momentum: 0.9  # for SGD
+scheduler:
+  name: "cosine"  # cosine, step, plateau
+  step_size: 10  # for step scheduler
+  gamma: 0.1  # for step scheduler
+  factor: 0.5  # for plateau scheduler
+  patience: 5  # for plateau scheduler
+gradient_clip_norm: 1.0
+early_stopping:
+  patience: 10
+  min_delta: 0.001

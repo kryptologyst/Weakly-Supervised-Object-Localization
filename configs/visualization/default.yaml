@@ -1,0 +1,10 @@
+# Visualization configuration
+save_attention_maps: true
+save_heatmaps: true
+save_gifs: false
+num_samples: 8
+figure_size: [12, 8]
+dpi: 300
+colormap: "jet"
+alpha: 0.6
+save_format: "png"  # png, pdf, svg

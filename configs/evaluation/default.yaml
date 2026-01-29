@@ -1,0 +1,16 @@
+# Evaluation configuration
+metrics:
+  - "accuracy"
+  - "precision"
+  - "recall"
+  - "f1_score"
+  - "top_1_accuracy"
+  - "top_5_accuracy"
+  - "pointing_game"
+  - "top1_localization"
+  - "gt_known_localization"
+  - "mean_iou"
+iou_threshold: 0.5
+pointing_game_threshold: 0.5
+save_predictions: true
+save_attention_maps: true
